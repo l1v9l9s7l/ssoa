@@ -7,118 +7,91 @@ import { Circle } from "../ui/circle/circle";
 import { SyntheticEvent } from "react";
 import { useState } from "react";
 import { ElementStates } from "../../types/element-states";
-import { delay } from "../../utils/delay";
+import Queue from "../../utils/queue";
 
+import { FormEvent,  useEffect } from "react";
+
+const queue = new Queue<string>(6);
 
 export const QueuePage: React.FC = () => {
-  let [inputState, setInputState] = useState<number>(0);
-  let [isLoading, setIsLoading] = useState(false);
 
-  let items: [] = []
-  let count = 0;
-  //Индекс удаляемого элемента, увеличивается каждый раз при удалении
-  // const  [count, setCount] = useState(0)
-  const [deleteCount, setDeleteCount] = useState(0)
-  //Очередь (массив объектов)
-  const [queue, setQueue] = useState<any>(items);
-  const [highlightedItem, setHighlightedItem] = useState<number | null>(null);
-  const [headElement, setHeadElement] = useState<any>(null)
-  const [tailElement, setTailElement] = useState<any>(null)
+  const [isLoading, setLoading] = useState<boolean>(false);
+  const [inputState, setInputState] = useState<string>('');
+  const [action, setAction] = useState<string>('');
 
-  const enqueue = (item: number) => {
-    setIsLoading(true)
+  const handleInputChange = (event: FormEvent<HTMLInputElement>) => {
+    setInputState(event.currentTarget.value);
+  }
 
-    if(headElement == null){
-      setHeadElement(0)
-    }
+  const onAddButton = (event: SyntheticEvent) => {
+    event.preventDefault();
+    queue.enqueue(inputState);
+    setAction('add');
+    setLoading(true);
+  }
 
-    count = queue.length;
-    setQueue((prevQueue: []) => [...prevQueue, {item: item, index: count}]);
-    setHighlightedItem(count);
-    setTailElement(count)
-    if(tailElement == null){
-      setHeadElement(count)
-    }
+  const onDeleteButton = () => {
+    queue.dequeue();
+    setAction('remove');
+    setLoading(true);
+  }
+
+  const onWipeButton = () => {
+    queue.clean();
+    setLoading(true);
+  }
+
+  useEffect(() => {
     setTimeout(() => {
-      setHighlightedItem(null);
-      setIsLoading(false)
-    }, 1000);
-  };
+      if (isLoading) {
+        setAction('');
+        setLoading(false);
+      }
+    }, 500)
+  }, [isLoading])
 
-  async function dequeue(){
-    setIsLoading(true)
-    if(headElement >= 0 && headElement < queue.length){
-      console.log(headElement)
-      console.log(tailElement)
-      setHighlightedItem(headElement);
-      await delay(500)
-      setTimeout(() => {
-        setHighlightedItem(null);
-      }, 0);
-      setHeadElement(headElement + 1)
-    }
-    // console.log(headElement + 1)
-    let newQueue = [...queue]
-    if(newQueue[deleteCount]){
-      newQueue[deleteCount] = null;
-    if(deleteCount < 6){
-      setDeleteCount(deleteCount + 1)
-    }
-    setQueue(newQueue)
-    setTimeout(() => {
-      setIsLoading(false)
-      setHighlightedItem(null);
-    }, 1000);
-    }
-    if(headElement == tailElement){
-      setHeadElement(null)
-      setTailElement(null)
-    }
-  };
+  const renderQueue = () => {
+    let components = [];
+    const array = queue.getElements();
+    const size = queue.getSize();
+    const tail = queue.getTail() === 0 ? 0 : queue.getTail() - 1;
+    const head = queue.getHead();
+    let actionIndex = size + 1;
 
-  const changeInput = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInputState(Number(e.target.value))
+    actionIndex = action === 'add' ? tail : head;
+    const tailPending = isLoading && action === 'add' ? tail - 1 : tail;
+
+    for (let index = 0; index < size; index++) {
+      const element = array[index];
+      components.push(
+        <Circle
+          key={index}
+          head={index === head ? 'head' : ''}
+          tail={index === tailPending ? 'tail' : ''}
+          state={index === actionIndex && isLoading ? ElementStates.Changing : ElementStates.Default}
+          letter={index === actionIndex && isLoading && action === 'add' ? '' : (element ? element : '')}
+          index={index}
+          extraClass={styles.Number}
+        />
+      )
+
+    }
+
+    return components;
   }
 
-  function onAddButton(event: SyntheticEvent){
-    event.preventDefault();
-    enqueue(inputState) 
-
-  }
-  async function onDeleteButton(event: SyntheticEvent){
-    event.preventDefault();
-    dequeue()
-
-  }
-  function onWipeButton(event: SyntheticEvent){
-    event.preventDefault();
-    setDeleteCount(0)
-    setQueue([])
-    setHeadElement(null)
-    setTailElement(null)
-  }
+  const isValid = inputState.length === 0;
 
   return (
     <SolutionLayout title="Очередь">
-      <div className={styles.commonWraper}>
-      <div className={styles.wraper}>
-        <div className={styles.input}>
-          <Input onChange={changeInput} value={inputState} id='recursionInput' maxLength={4} />
-        </div>
-        <Button type="submit" onClick={onAddButton} extraClass = {styles.activateButton} text="Добавить" isLoader={isLoading}/>
-        <Button  type="submit" onClick={onDeleteButton} extraClass = {styles.activateButton} text="Удалить" isLoader={isLoading}/>
-        <Button  type="submit" onClick={onWipeButton} extraClass = {styles.wipeButton} text="Очистить" />
-      </div>
-      <p className={styles.textWraper}>Максимум — 4 символа</p>
+      <form className={styles.wraper}>
+        <Input  disabled={isLoading}  extraClass={styles.input}  value={inputState}  maxLength={4}  isLimitText={true}  onChange={handleInputChange} />
+        <Button  extraClass={styles.activateButton}  disabled={isValid || queue.getSize() === queue.getTail()}  isLoader={isLoading}  type='submit'  text='Добавить'  onClick={onAddButton}/>
+        <Button  extraClass={styles.activateButton}  disabled={isValid || queue.getSize() === queue.getHead()}  isLoader={isLoading}  type='button'  text='Удалить'  onClick={onDeleteButton}  />
+        <Button  extraClass={styles.wipeButton}  isLoader={isLoading}  type='button'  text='Очистить'  onClick={onWipeButton}/>
+      </form>
       <div className={styles.circlesWraper}>
-        <Circle index={0} letter={queue[0]? queue[0].item : ''} state={highlightedItem == 0? ElementStates.Changing : ElementStates.Default} head={headElement == 0? 'head' : ''} tail={tailElement == 0? 'tail' : ''}/>
-        <Circle index={1} letter={queue[1]? queue[1].item : ''} state={highlightedItem == 1? ElementStates.Changing : ElementStates.Default} head={headElement == 1? 'head' : ''} tail={tailElement == 1? 'tail' : ''}/>
-        <Circle index={2} letter={queue[2]? queue[2].item : ''} state={highlightedItem == 2? ElementStates.Changing : ElementStates.Default} head={headElement == 2? 'head' : ''} tail={tailElement == 2? 'tail' : ''}/>
-        <Circle index={3} letter={queue[3]? queue[3].item : ''} state={highlightedItem == 3? ElementStates.Changing : ElementStates.Default} head={headElement == 3? 'head' : ''} tail={tailElement == 3? 'tail' : ''}/>
-        <Circle index={4} letter={queue[4]? queue[4].item : ''} state={highlightedItem == 4? ElementStates.Changing : ElementStates.Default} head={headElement == 4 && deleteCount != 5? 'head' : ''} tail={tailElement == 4? 'tail' : ''}/>
-        <Circle index={5} letter={queue[5]? queue[5].item : ''} state={highlightedItem == 5? ElementStates.Changing : ElementStates.Default} head={headElement == 5? 'head' : ''} tail={tailElement == 5? 'tail' : ''}/>
-        <Circle index={6} letter={queue[6]? queue[6].item : ''} state={highlightedItem == 6? ElementStates.Changing : ElementStates.Default} head={headElement == 6? 'head' : ''} tail={tailElement == 6? 'tail' : ''}/>
-      </div>
+        {renderQueue()}
       </div>
     </SolutionLayout>
   );

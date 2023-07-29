@@ -10,10 +10,11 @@ import { delay } from "../../utils/delay";
 
 
 export const FibonacciPage: React.FC = () => {
-  let [inputState, setInputState] = useState<number>(0);
-  let [circleSymbolsState, setCircleSymbolsState] = useState<JSX.Element[]>();
-  let [fibState, setFibState] = useState<string[]>()
-  let [isLoading, setIsLoading] = useState(false);
+  const [inputState, setInputState] = useState<number>(0);
+  const [circleSymbolsState, setCircleSymbolsState] = useState<JSX.Element[]>();
+  const [fibState, setFibState] = useState<string[]>()
+  const [isLoading, setIsLoading] = useState(false);
+  const [isButtonDisabled, setButtonDisabled] = useState(false)
 
   const fibonachi: (n: number) => number = (n: number) => {
     if (n === 1 || n === 2) {
@@ -23,7 +24,7 @@ export const FibonacciPage: React.FC = () => {
   }
 
   const fibonachiRow: (n: number) => void = (n: number) => {
-    let fibArr = [];
+    const fibArr = [];
     for(let i= 1; i < n + 1; i++){
       fibArr.push(fibonachi(i).toString())
       setFibState(fibArr)
@@ -60,12 +61,21 @@ export const FibonacciPage: React.FC = () => {
 
   }, [fibState])
 
+  useEffect(() => {
+    if(inputState > 19){
+      setButtonDisabled(true)
+    }
+    if(inputState < 19){
+      setButtonDisabled(false)
+    }
+  }, [inputState])
+
   return (
     <SolutionLayout title="Последовательность Фибоначчи">
       <div className={styles.commonWraper}>
       <div className={styles.wraper}>
-        <Input onChange={changeInput} value={inputState} id='recursionInput' maxLength={11} />
-        <Button isLoader= {isLoading} type="submit" onClick={onSubmit} extraClass = {styles.activateButton} text="Развернуть" />
+        <Input onChange={changeInput} value={inputState} id='recursionInput' maxLength={2} type="number"/>
+        <Button isLoader= {isLoading} type="submit" onClick={onSubmit} extraClass = {styles.activateButton} text="Развернуть" disabled={isButtonDisabled} />
       </div>
       <p className={styles.textWraper}>Максимальное число - 19</p>
       <div className={styles.circlesWraper}>
