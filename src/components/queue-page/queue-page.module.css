@@ -1,0 +1,41 @@
+.wraper{
+  margin: auto;
+  width: 832px;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.commonWraper{
+  width: 812px;
+  margin: auto
+}
+
+
+.activateButton{
+  margin-left: 14px;
+}
+
+.textWraper{
+  justify-self: flex-start;
+  width: 172px;
+  font-size: 14px;
+  font-family: Segoe UI;
+}
+
+.circlesWraper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 80px);
+  gap: 16px;
+  margin: auto;
+  margin-top: 120px;
+  justify-content: center;
+}
+
+.input{
+  width: 377px;
+}
+
+.wipeButton{
+  margin-left: 60px;
+}
