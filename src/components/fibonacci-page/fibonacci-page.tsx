@@ -70,12 +70,14 @@ export const FibonacciPage: React.FC = () => {
     }
   }, [inputState])
 
+  const isValid = inputState === 0;
+
   return (
     <SolutionLayout title="Последовательность Фибоначчи">
       <div className={styles.commonWraper}>
       <div className={styles.wraper}>
         <Input onChange={changeInput} value={inputState} id='recursionInput' maxLength={2} type="number"/>
-        <Button isLoader= {isLoading} type="submit" onClick={onSubmit} extraClass = {styles.activateButton} text="Развернуть" disabled={isButtonDisabled} />
+        <Button disabled={isValid} data-testid="button-main" isLoader= {isLoading} type="submit" onClick={onSubmit} extraClass = {styles.activateButton} text="Развернуть"  />
       </div>
       <p className={styles.textWraper}>Максимальное число - 19</p>
       <div className={styles.circlesWraper}>

@@ -345,6 +345,7 @@ export const ListPage: React.FC = () => {
           isLimitText={true}
           placeholder='Введите значение'
           onChange={handleInputValueChange}
+          name='value'
         />
         <Button
           extraClass={styles.SmallButton}
@@ -353,6 +354,7 @@ export const ListPage: React.FC = () => {
           type='button'
           text='Добавить в head'
           onClick={handleAddHead}
+          data-testid='button-add-to-head'
         />
         <Button
           extraClass={styles.SmallButton}
@@ -361,6 +363,7 @@ export const ListPage: React.FC = () => {
           type='button'
           text='Добавить в tail'
           onClick={handleAddTail}
+          data-testid='button-add-to-tail'
         />
         <Button
           extraClass={styles.SmallButton}
@@ -369,6 +372,7 @@ export const ListPage: React.FC = () => {
           type='button'
           text='Удалить из head'
           onClick={handleRemoveHead}
+          data-testid='button-del-from-head'
         />
         <Button
           extraClass={styles.SmallButton}
@@ -377,6 +381,7 @@ export const ListPage: React.FC = () => {
           type='button'
           text='Удалить из tail'
           onClick={handleRemoveTail}
+          data-testid='button-del-from-tail'
         />
       </div>
       <div className={styles.Form}>
@@ -388,6 +393,7 @@ export const ListPage: React.FC = () => {
           value={inputIndexForm}
           placeholder='Введите индекс'
           onChange={handleInputIndexChange}
+          name='index'
         />
         <Button
           extraClass={styles.LargeButton}
@@ -396,6 +402,7 @@ export const ListPage: React.FC = () => {
           type='button'
           text='Добавить по индексу'
           onClick={handleAddByIndex}
+          data-testid='button-add-by-index'
         />
         <Button
           extraClass={styles.LargeButton}
@@ -404,6 +411,7 @@ export const ListPage: React.FC = () => {
           type='button'
           text='Удалить по индексу'
           onClick={handleRemoveByIndex}
+          data-testid='button-del-by-index'
         />
       </div>
       <div className={styles.CharContainer}>
