@@ -1,0 +1,15 @@
+export const addToHeadButton = '[data-testid="button-add-to-head"]';
+export const addToTailButton = '[data-testid="button-add-to-tail"]';
+export const addByIndexButton = '[data-testid="button-add-by-index"]';
+export const delByIndexButton = '[data-testid="button-del-by-index"]';
+export const deleteFromTailButton = '[data-testid="button-del-from-tail"]';
+export const deleteFromHeadButton = '[data-testid="button-del-from-head"]';
+export const mainButton = '[data-testid="button-main"]';
+export const circleClass = "[class^=circle_circle]";
+export const circleTI = "[data-testid^=circle]";
+export const initial = "4px solid rgb(0, 50, 255)";
+export const changing = "4px solid rgb(210, 82, 225)";
+export const modified = "4px solid rgb(127, 224, 81)";
+export const addButton = '[data-testid="button-add"]';
+export const removeButton = '[data-testid="button-del"]';
+export const clearButton = '[data-testid="button-clear"]';
