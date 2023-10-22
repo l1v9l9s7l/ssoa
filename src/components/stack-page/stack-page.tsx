@@ -55,8 +55,8 @@ export const StackPage: React.FC = () => {
         <div className={styles.input}>
           <Input disabled={isLoading} value={inputState} maxLength={4} isLimitText={true} onChange={changeInput} extraClass={styles.input} />
         </div>
-        <Button extraClass = {styles.activateButton}  disabled={isValid} isLoader={isLoading} type='submit' text='Добавить' onClick={onAddButton}/>
-        <Button extraClass = {styles.activateButton}  disabled={isValid} isLoader={isLoading} type='button' text='Удалить' onClick={onDeleteButton}/>
+        <Button data-testid='button-add' extraClass = {styles.activateButton}  disabled={isValid} isLoader={isLoading} type='submit' text='Добавить' onClick={onAddButton}/>
+        <Button data-testid='button-del' extraClass = {styles.activateButton}  disabled={isValid} isLoader={isLoading} type='button' text='Удалить' onClick={onDeleteButton}/>
         <Button extraClass = {styles.wipeButton} disabled={isValid} isLoader={isLoading}  type='button'  text='Очистить'  onClick={onWipeButton} />
       </div>
       <div className={styles.circlesWraper}>

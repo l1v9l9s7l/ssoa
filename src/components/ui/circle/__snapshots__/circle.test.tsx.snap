@@ -1,0 +1,1364 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Тест круга Круг с React элементом в head 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="content "
+      >
+        <div
+          class="text text_type_input text_color_input mb-4 absolute head element"
+          data-testid="circle-head"
+        >
+          <div
+            class="content "
+          >
+            <div
+              class="text text_type_input text_color_input mb-4 absolute head element"
+              data-testid="circle-head"
+            />
+            <div
+              class="circle   default"
+              data-testid="circle-state"
+            >
+              <p
+                class="text text_type_circle text_color_input letter"
+                data-testid="circle-symbol"
+              />
+            </div>
+            <p
+              class="text text_type_input text_color_input mt-4 absolute index"
+              data-testid="circle-index"
+            />
+            <div
+              class="text text_type_input text_color_input mt-4 absolute tail30 element"
+              data-testid="circle-tail"
+            />
+          </div>
+        </div>
+        <div
+          class="circle   default"
+          data-testid="circle-state"
+        >
+          <p
+            class="text text_type_circle text_color_input letter"
+            data-testid="circle-symbol"
+          />
+        </div>
+        <p
+          class="text text_type_input text_color_input mt-4 absolute index"
+          data-testid="circle-index"
+        />
+        <div
+          class="text text_type_input text_color_input mt-4 absolute tail30 element"
+          data-testid="circle-tail"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="content "
+    >
+      <div
+        class="text text_type_input text_color_input mb-4 absolute head element"
+        data-testid="circle-head"
+      >
+        <div
+          class="content "
+        >
+          <div
+            class="text text_type_input text_color_input mb-4 absolute head element"
+            data-testid="circle-head"
+          />
+          <div
+            class="circle   default"
+            data-testid="circle-state"
+          >
+            <p
+              class="text text_type_circle text_color_input letter"
+              data-testid="circle-symbol"
+            />
+          </div>
+          <p
+            class="text text_type_input text_color_input mt-4 absolute index"
+            data-testid="circle-index"
+          />
+          <div
+            class="text text_type_input text_color_input mt-4 absolute tail30 element"
+            data-testid="circle-tail"
+          />
+        </div>
+      </div>
+      <div
+        class="circle   default"
+        data-testid="circle-state"
+      >
+        <p
+          class="text text_type_circle text_color_input letter"
+          data-testid="circle-symbol"
+        />
+      </div>
+      <p
+        class="text text_type_input text_color_input mt-4 absolute index"
+        data-testid="circle-index"
+      />
+      <div
+        class="text text_type_input text_color_input mt-4 absolute tail30 element"
+        data-testid="circle-tail"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Тест круга Круг с React элементом в tail 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="content "
+      >
+        <div
+          class="text text_type_input text_color_input mb-4 absolute head element"
+          data-testid="circle-head"
+        />
+        <div
+          class="circle   default"
+          data-testid="circle-state"
+        >
+          <p
+            class="text text_type_circle text_color_input letter"
+            data-testid="circle-symbol"
+          />
+        </div>
+        <p
+          class="text text_type_input text_color_input mt-4 absolute index"
+          data-testid="circle-index"
+        />
+        <div
+          class="text text_type_input text_color_input mt-4 absolute tail30 element"
+          data-testid="circle-tail"
+        >
+          <div
+            class="content "
+          >
+            <div
+              class="text text_type_input text_color_input mb-4 absolute head element"
+              data-testid="circle-head"
+            />
+            <div
+              class="circle   default"
+              data-testid="circle-state"
+            >
+              <p
+                class="text text_type_circle text_color_input letter"
+                data-testid="circle-symbol"
+              />
+            </div>
+            <p
+              class="text text_type_input text_color_input mt-4 absolute index"
+              data-testid="circle-index"
+            />
+            <div
+              class="text text_type_input text_color_input mt-4 absolute tail30 element"
+              data-testid="circle-tail"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="content "
+    >
+      <div
+        class="text text_type_input text_color_input mb-4 absolute head element"
+        data-testid="circle-head"
+      />
+      <div
+        class="circle   default"
+        data-testid="circle-state"
+      >
+        <p
+          class="text text_type_circle text_color_input letter"
+          data-testid="circle-symbol"
+        />
+      </div>
+      <p
+        class="text text_type_input text_color_input mt-4 absolute index"
+        data-testid="circle-index"
+      />
+      <div
+        class="text text_type_input text_color_input mt-4 absolute tail30 element"
+        data-testid="circle-tail"
+      >
+        <div
+          class="content "
+        >
+          <div
+            class="text text_type_input text_color_input mb-4 absolute head element"
+            data-testid="circle-head"
+          />
+          <div
+            class="circle   default"
+            data-testid="circle-state"
+          >
+            <p
+              class="text text_type_circle text_color_input letter"
+              data-testid="circle-symbol"
+            />
+          </div>
+          <p
+            class="text text_type_input text_color_input mt-4 absolute index"
+            data-testid="circle-index"
+          />
+          <div
+            class="text text_type_input text_color_input mt-4 absolute tail30 element"
+            data-testid="circle-tail"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Тест круга Круг с changing state 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="content "
+      >
+        <div
+          class="text text_type_input text_color_input mb-4 absolute head element"
+          data-testid="circle-head"
+        />
+        <div
+          class="circle   default"
+          data-testid="circle-state"
+        >
+          <p
+            class="text text_type_circle text_color_input letter"
+            data-testid="circle-symbol"
+          />
+        </div>
+        <p
+          class="text text_type_input text_color_input mt-4 absolute index"
+          data-testid="circle-index"
+        />
+        <div
+          class="text text_type_input text_color_input mt-4 absolute tail30 element"
+          data-testid="circle-tail"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="content "
+    >
+      <div
+        class="text text_type_input text_color_input mb-4 absolute head element"
+        data-testid="circle-head"
+      />
+      <div
+        class="circle   default"
+        data-testid="circle-state"
+      >
+        <p
+          class="text text_type_circle text_color_input letter"
+          data-testid="circle-symbol"
+        />
+      </div>
+      <p
+        class="text text_type_input text_color_input mt-4 absolute index"
+        data-testid="circle-index"
+      />
+      <div
+        class="text text_type_input text_color_input mt-4 absolute tail30 element"
+        data-testid="circle-tail"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Тест круга Круг с default state  1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="content "
+      >
+        <div
+          class="text text_type_input text_color_input mb-4 absolute head element"
+          data-testid="circle-head"
+        />
+        <div
+          class="circle   default"
+          data-testid="circle-state"
+        >
+          <p
+            class="text text_type_circle text_color_input letter"
+            data-testid="circle-symbol"
+          />
+        </div>
+        <p
+          class="text text_type_input text_color_input mt-4 absolute index"
+          data-testid="circle-index"
+        />
+        <div
+          class="text text_type_input text_color_input mt-4 absolute tail30 element"
+          data-testid="circle-tail"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="content "
+    >
+      <div
+        class="text text_type_input text_color_input mb-4 absolute head element"
+        data-testid="circle-head"
+      />
+      <div
+        class="circle   default"
+        data-testid="circle-state"
+      >
+        <p
+          class="text text_type_circle text_color_input letter"
+          data-testid="circle-symbol"
+        />
+      </div>
+      <p
+        class="text text_type_input text_color_input mt-4 absolute index"
+        data-testid="circle-index"
+      />
+      <div
+        class="text text_type_input text_color_input mt-4 absolute tail30 element"
+        data-testid="circle-tail"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Тест круга Круг с head 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="content "
+      >
+        <div
+          class="text text_type_input text_color_input mb-4 absolute head string"
+          data-testid="circle-head"
+        >
+          head
+        </div>
+        <div
+          class="circle   default"
+          data-testid="circle-state"
+        >
+          <p
+            class="text text_type_circle text_color_input letter"
+            data-testid="circle-symbol"
+          />
+        </div>
+        <p
+          class="text text_type_input text_color_input mt-4 absolute index"
+          data-testid="circle-index"
+        />
+        <div
+          class="text text_type_input text_color_input mt-4 absolute tail30 element"
+          data-testid="circle-tail"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="content "
+    >
+      <div
+        class="text text_type_input text_color_input mb-4 absolute head string"
+        data-testid="circle-head"
+      >
+        head
+      </div>
+      <div
+        class="circle   default"
+        data-testid="circle-state"
+      >
+        <p
+          class="text text_type_circle text_color_input letter"
+          data-testid="circle-symbol"
+        />
+      </div>
+      <p
+        class="text text_type_input text_color_input mt-4 absolute index"
+        data-testid="circle-index"
+      />
+      <div
+        class="text text_type_input text_color_input mt-4 absolute tail30 element"
+        data-testid="circle-tail"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Тест круга Круг с modified state 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="content "
+      >
+        <div
+          class="text text_type_input text_color_input mb-4 absolute head element"
+          data-testid="circle-head"
+        />
+        <div
+          class="circle   default"
+          data-testid="circle-state"
+        >
+          <p
+            class="text text_type_circle text_color_input letter"
+            data-testid="circle-symbol"
+          />
+        </div>
+        <p
+          class="text text_type_input text_color_input mt-4 absolute index"
+          data-testid="circle-index"
+        />
+        <div
+          class="text text_type_input text_color_input mt-4 absolute tail30 element"
+          data-testid="circle-tail"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="content "
+    >
+      <div
+        class="text text_type_input text_color_input mb-4 absolute head element"
+        data-testid="circle-head"
+      />
+      <div
+        class="circle   default"
+        data-testid="circle-state"
+      >
+        <p
+          class="text text_type_circle text_color_input letter"
+          data-testid="circle-symbol"
+        />
+      </div>
+      <p
+        class="text text_type_input text_color_input mt-4 absolute index"
+        data-testid="circle-index"
+      />
+      <div
+        class="text text_type_input text_color_input mt-4 absolute tail30 element"
+        data-testid="circle-tail"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Тест круга Круг с индексом 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="content "
+      >
+        <div
+          class="text text_type_input text_color_input mb-4 absolute head element"
+          data-testid="circle-head"
+        />
+        <div
+          class="circle   default"
+          data-testid="circle-state"
+        >
+          <p
+            class="text text_type_circle text_color_input letter"
+            data-testid="circle-symbol"
+          />
+        </div>
+        <p
+          class="text text_type_input text_color_input mt-4 absolute index"
+          data-testid="circle-index"
+        >
+          4
+        </p>
+        <div
+          class="text text_type_input text_color_input mt-4 absolute tail60 element"
+          data-testid="circle-tail"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="content "
+    >
+      <div
+        class="text text_type_input text_color_input mb-4 absolute head element"
+        data-testid="circle-head"
+      />
+      <div
+        class="circle   default"
+        data-testid="circle-state"
+      >
+        <p
+          class="text text_type_circle text_color_input letter"
+          data-testid="circle-symbol"
+        />
+      </div>
+      <p
+        class="text text_type_input text_color_input mt-4 absolute index"
+        data-testid="circle-index"
+      >
+        4
+      </p>
+      <div
+        class="text text_type_input text_color_input mt-4 absolute tail60 element"
+        data-testid="circle-tail"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Тест круга Круг с текстом в tail 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="content "
+      >
+        <div
+          class="text text_type_input text_color_input mb-4 absolute head element"
+          data-testid="circle-head"
+        />
+        <div
+          class="circle   default"
+          data-testid="circle-state"
+        >
+          <p
+            class="text text_type_circle text_color_input letter"
+            data-testid="circle-symbol"
+          />
+        </div>
+        <p
+          class="text text_type_input text_color_input mt-4 absolute index"
+          data-testid="circle-index"
+        />
+        <div
+          class="text text_type_input text_color_input mt-4 absolute tail30 string"
+          data-testid="circle-tail"
+        >
+          tail
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="content "
+    >
+      <div
+        class="text text_type_input text_color_input mb-4 absolute head element"
+        data-testid="circle-head"
+      />
+      <div
+        class="circle   default"
+        data-testid="circle-state"
+      >
+        <p
+          class="text text_type_circle text_color_input letter"
+          data-testid="circle-symbol"
+        />
+      </div>
+      <p
+        class="text text_type_input text_color_input mt-4 absolute index"
+        data-testid="circle-index"
+      />
+      <div
+        class="text text_type_input text_color_input mt-4 absolute tail30 string"
+        data-testid="circle-tail"
+      >
+        tail
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Тест круга Маленький круг 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="content "
+      >
+        <div
+          class="text text_type_input text_color_input mb-4 absolute head element"
+          data-testid="circle-head"
+        />
+        <div
+          class="circle  small default"
+          data-testid="circle-state"
+        >
+          <p
+            class="text text_type_circle text_color_input letter"
+            data-testid="circle-symbol"
+          />
+        </div>
+        <p
+          class="text text_type_input text_color_input mt-4 absolute index"
+          data-testid="circle-index"
+        />
+        <div
+          class="text text_type_input text_color_input mt-4 absolute tail30 element"
+          data-testid="circle-tail"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="content "
+    >
+      <div
+        class="text text_type_input text_color_input mb-4 absolute head element"
+        data-testid="circle-head"
+      />
+      <div
+        class="circle  small default"
+        data-testid="circle-state"
+      >
+        <p
+          class="text text_type_circle text_color_input letter"
+          data-testid="circle-symbol"
+        />
+      </div>
+      <p
+        class="text text_type_input text_color_input mt-4 absolute index"
+        data-testid="circle-index"
+      />
+      <div
+        class="text text_type_input text_color_input mt-4 absolute tail30 element"
+        data-testid="circle-tail"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Тест круга Рендер круга ,без буквы 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="content "
+      >
+        <div
+          class="text text_type_input text_color_input mb-4 absolute head element"
+          data-testid="circle-head"
+        />
+        <div
+          class="circle   default"
+          data-testid="circle-state"
+        >
+          <p
+            class="text text_type_circle text_color_input letter"
+            data-testid="circle-symbol"
+          />
+        </div>
+        <p
+          class="text text_type_input text_color_input mt-4 absolute index"
+          data-testid="circle-index"
+        />
+        <div
+          class="text text_type_input text_color_input mt-4 absolute tail30 element"
+          data-testid="circle-tail"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="content "
+    >
+      <div
+        class="text text_type_input text_color_input mb-4 absolute head element"
+        data-testid="circle-head"
+      />
+      <div
+        class="circle   default"
+        data-testid="circle-state"
+      >
+        <p
+          class="text text_type_circle text_color_input letter"
+          data-testid="circle-symbol"
+        />
+      </div>
+      <p
+        class="text text_type_input text_color_input mt-4 absolute index"
+        data-testid="circle-index"
+      />
+      <div
+        class="text text_type_input text_color_input mt-4 absolute tail30 element"
+        data-testid="circle-tail"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Тест круга Рендер круга с буквой 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="content "
+      >
+        <div
+          class="text text_type_input text_color_input mb-4 absolute head element"
+          data-testid="circle-head"
+        />
+        <div
+          class="circle   default"
+          data-testid="circle-state"
+        >
+          <p
+            class="text text_type_circle text_color_input letter"
+            data-testid="circle-symbol"
+          >
+            123
+          </p>
+        </div>
+        <p
+          class="text text_type_input text_color_input mt-4 absolute index"
+          data-testid="circle-index"
+        />
+        <div
+          class="text text_type_input text_color_input mt-4 absolute tail30 element"
+          data-testid="circle-tail"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="content "
+    >
+      <div
+        class="text text_type_input text_color_input mb-4 absolute head element"
+        data-testid="circle-head"
+      />
+      <div
+        class="circle   default"
+        data-testid="circle-state"
+      >
+        <p
+          class="text text_type_circle text_color_input letter"
+          data-testid="circle-symbol"
+        >
+          123
+        </p>
+      </div>
+      <p
+        class="text text_type_input text_color_input mt-4 absolute index"
+        data-testid="circle-index"
+      />
+      <div
+        class="text text_type_input text_color_input mt-4 absolute tail30 element"
+        data-testid="circle-tail"
+      />
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

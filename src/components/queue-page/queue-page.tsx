@@ -86,9 +86,9 @@ export const QueuePage: React.FC = () => {
     <SolutionLayout title="Очередь">
       <form className={styles.wraper}>
         <Input  disabled={isLoading}  extraClass={styles.input}  value={inputState}  maxLength={4}  isLimitText={true}  onChange={handleInputChange} />
-        <Button  extraClass={styles.activateButton}  disabled={isValid || queue.getSize() === queue.getTail()}  isLoader={isLoading}  type='submit'  text='Добавить'  onClick={onAddButton}/>
-        <Button  extraClass={styles.activateButton}  disabled={isValid || queue.getSize() === queue.getHead()}  isLoader={isLoading}  type='button'  text='Удалить'  onClick={onDeleteButton}  />
-        <Button  extraClass={styles.wipeButton}  isLoader={isLoading}  type='button'  text='Очистить'  onClick={onWipeButton}/>
+        <Button data-testid='button-add' extraClass={styles.activateButton}  disabled={isValid || queue.getSize() === queue.getTail()}  isLoader={isLoading}  type='submit'  text='Добавить'  onClick={onAddButton}/>
+        <Button data-testid='button-del'  extraClass={styles.activateButton}  disabled={isValid || queue.getSize() === queue.getHead()}  isLoader={isLoading}  type='button'  text='Удалить'  onClick={onDeleteButton}  />
+        <Button data-testid='button-clear' extraClass={styles.wipeButton}  isLoader={isLoading}  type='button'  text='Очистить'  onClick={onWipeButton}/>
       </form>
       <div className={styles.circlesWraper}>
         {renderQueue()}

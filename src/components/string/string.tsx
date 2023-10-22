@@ -7,14 +7,19 @@ import { useState} from "react";
 import { Circle } from "../ui/circle/circle";
 import { SyntheticEvent } from "react";
 import { delay } from "../../utils/delay";
+import { act} from '@testing-library/react'
 
 
 
 export const StringComponent: React.FC = () => {
+  //Состояние инпута (строка)
   let [recursionInputState, setRecursionInputState] = useState('');
+  //Массив со значение инпута занесенным в кружки
   let [circleSymbolsState, setCircleSymbolsState] = useState<any>();
+  //Состояние лоадера
   let [isLoading, setIsLoading] = useState(false);
-
+  let [testWordState, setTestWordState] = useState<any>();
+  //Функция разворота строки
   async function wordRebuild(arr: any)
   {
     const initSelect = (data: any) => {
@@ -30,11 +35,11 @@ export const StringComponent: React.FC = () => {
 
     for (let i = 0; i < arr.length/2; i++) {
       if(i === 0){
-        setIsLoading(true)
+        act(() => {setIsLoading(true)})
       }
       await delay(1000);
       if(i + 1 >= arr.length/2){
-        setIsLoading(false)
+        act(() => {setIsLoading(false)})
       }
       let tmp = newArr[i];
       newArr[i].props.state = 'changing'
@@ -52,7 +57,11 @@ export const StringComponent: React.FC = () => {
         newArr[arr.length/2].props.state = 'modified'
         newArr[arr.length/2 - 1].props.state = 'modified'
       }
-      setCircleSymbolsState(newArr)
+      const letters = newArr.map((i:any) => {
+        return i.props.letter
+      })
+      act(() => {setTestWordState(letters)})
+      act(() => {setCircleSymbolsState(newArr)})
   }
   }
 
@@ -73,7 +82,7 @@ export const StringComponent: React.FC = () => {
     wordRebuild(circleSymbols)
   }
 
-
+  const isValid = recursionInputState.length === 0;
 
   
   
@@ -81,14 +90,15 @@ export const StringComponent: React.FC = () => {
     <SolutionLayout title="Строка">
       <div className={styles.commonWraper}>
       <div className={styles.wraper}>
-        <Input onChange={changeRecursionInput} value={recursionInputState} id='recursionInput' maxLength={11} />
-        <Button isLoader={isLoading} type="submit" onClick={onSubmit} extraClass = {styles.activateButton} text="Развернуть" />
+        <Input  onChange={changeRecursionInput} value={recursionInputState} id='recursionInput' maxLength={11} placeholder="Введите текст"/>
+        <Button disabled={isValid} data-testid="button-main" isLoader={isLoading} type="submit" onClick={onSubmit} extraClass = {styles.activateButton} text="Развернуть" />
       </div>
       <p className={styles.textWraper}>Максимум — 11 символов</p>
       </div>
       <div className={styles.circlesWraper}>
         {circleSymbolsState}
       </div>
+      <p data-testid="test-word" className={styles.testWord}>{testWordState}</p>
     </SolutionLayout>
   );
 };
